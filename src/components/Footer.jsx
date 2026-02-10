@@ -32,7 +32,7 @@ export function Footer() {
             href="mailto:contact@mietjammu.in"
             className="text-accent-glow hover:text-accent transition-colors"
           >
-            contact@mietjammu.in
+          
           </a>
         </motion.p>
         <p className="text-text-secondary/70 text-xs mt-8">
