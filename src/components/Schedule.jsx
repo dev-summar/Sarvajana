@@ -4,7 +4,7 @@ import { Clock, Mic, Presentation, Users, UtensilsCrossed } from 'lucide-react'
 const scheduleItems = [
   {
     icon: Mic,
-    title: 'Speaker Talks',
+    title: 'Keynote Addresses',
     description: 'Four invited speakers will each deliver a 15-minute talk sharing insights on AI, innovation, and education.',
   },
   {
@@ -14,12 +14,12 @@ const scheduleItems = [
   },
   {
     icon: Users,
-    title: "Panel Talk – Leaders' Circle",
+    title: "leaders Circle",
     description: 'A moderated panel discussion to enable a deeper exchange of perspectives among leaders, experts, and academicians.',
   },
   {
     icon: UtensilsCrossed,
-    title: 'Lunch (Meet and Greet)',
+    title: 'Networking Lunch',
     description: 'An informal networking session for participants, speakers, and guests.',
   },
 ]
