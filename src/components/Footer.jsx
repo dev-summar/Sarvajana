@@ -10,7 +10,7 @@ export function Footer() {
           viewport={{ once: true }}
           className="flex justify-center mb-4"
         >
-          <img src="/assets/LOGO.png" alt="Sarvajana AI" className="h-12 md:h-14 w-auto" />
+          <img src={`${import.meta.env.BASE_URL}assets/LOGO.png`} alt="Sarvajana AI" className="h-12 md:h-14 w-auto" />
         </motion.div>
         <motion.p
           initial={{ opacity: 0 }}
