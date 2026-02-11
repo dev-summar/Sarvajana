@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import { MapPin, Calendar, Clock } from 'lucide-react'
 
 const sessionItems = [
-  'Speaker Talks (4 × 15 minutes)',
+  'Keynote Addresses (4 × 15 minutes)',
   'Poster Presentation',
-  "Leaders' Circle Panel Discussion",
-  'Lunch & Meet and Greet',
+  "Leaders' Circle",
+  'Networking Lunch',
 ]
 
 const details = [
