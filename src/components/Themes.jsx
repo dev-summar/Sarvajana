@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
-import { GraduationCap, Target, Shield } from 'lucide-react'
+import { GraduationCap, Target, Shield, Sparkles } from 'lucide-react'
 
 const tracks = [
   {
     icon: GraduationCap,
-    title: 'AI-first digital ecosystems',
+    title: 'AI-first digital Teaching Learning ecosystems',
     description: 'Transforming digital teaching–learning ecosystems through AI-first approaches.',
   },
   {
@@ -16,6 +16,11 @@ const tracks = [
     icon: Shield,
     title: 'Ethical adoption of LLMs',
     description: 'Responsible use of large language models and the future of generative intelligence.',
+  },
+  {
+    icon: Sparkles,
+    title: 'Future of Generative AI',
+    description: 'Exploring emerging trends, applications, and the long-term impact of generative AI across industries and education.',
   },
 ]
 
@@ -39,7 +44,7 @@ export function Themes() {
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {tracks.map((track, i) => (
             <motion.div
               key={track.title}

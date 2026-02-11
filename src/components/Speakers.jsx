@@ -4,7 +4,7 @@ import { Mic, Briefcase } from 'lucide-react'
 const speakers = [
   {
     name: 'Sidharth Mahotra',
-    role: 'Senior Principal AI Scientist',
+    role: 'Principal AI Strategist & Machine Learning Leader',
     organization: null,
     image: '/assets/Sidharth.png',
     fallbackImage: 'https://ui-avatars.com/api/?name=Sidharth+Mahotra&size=400&background=1e293b&color=6366f1',

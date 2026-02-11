@@ -19,7 +19,7 @@ const scheduleItems = [
   },
   {
     icon: UtensilsCrossed,
-    title: 'Lunch & Meet and Greet',
+    title: 'Lunch (Meet and Greet)',
     description: 'An informal networking session for participants, speakers, and guests.',
   },
 ]

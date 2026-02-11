@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
 import { Calendar, MapPin, ArrowRight } from 'lucide-react'
-import { TypingTitle } from './TypingTitle'
 import { FloatingIcons } from './FloatingIcons'
 
 const glassCards = [
@@ -53,17 +52,26 @@ export function Hero() {
           <div className="absolute inset-0 bg-gradient-to-b from-accent/30 via-accent-glow/20 to-transparent rounded-full blur-3xl" />
         </motion.div>
 
-        <div className="relative z-10">
-          <TypingTitle className="text-3xl min-[380px]:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight font-display min-h-[1.2em] flex items-center justify-center text-text-primary" />
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="relative z-10 flex justify-center"
+        >
+          <img
+            src="/assets/LOGO.png"
+            alt="Sarvajana AI"
+            className="w-full max-w-[240px] sm:max-w-[320px] md:max-w-[400px] lg:max-w-[480px] h-auto object-contain"
+          />
+        </motion.div>
 
         <motion.p
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="mt-4 sm:mt-6 text-base min-[400px]:text-lg sm:text-xl md:text-2xl text-text-secondary max-w-2xl mx-auto leading-relaxed font-medium"
+          className="mt-6 sm:mt-8 text-base min-[400px]:text-lg sm:text-xl md:text-2xl text-text-secondary max-w-2xl mx-auto leading-relaxed font-medium"
         >
-          Sarvajana AI: Empowering the Next Billion through Education
+          Empowering the Next Billion through Education
         </motion.p>
 
         {/* Glass cards: Date & Venue */}

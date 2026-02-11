@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { Mail } from 'lucide-react'
 
 export function Footer() {
   return (
@@ -29,22 +28,8 @@ export function Footer() {
         >
           Sarvajana AI 2026
         </motion.p>
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="mt-4 flex items-center justify-center gap-2 text-text-secondary text-sm"
-        >
-          <Mail className="w-4 h-4" />
-          <a
-            href="mailto:contact@mietjammu.in"
-            className="text-accent-glow hover:text-accent transition-colors"
-          >
-          
-          </a>
-        </motion.p>
         <p className="text-text-secondary/70 text-xs mt-8">
-          © 2026 Model Institute of Engineering and Technology. All rights reserved.
+          © 2026 Model Institute of Engineering and Technology, Jammu. All rights reserved.
         </p>
       </div>
     </footer>

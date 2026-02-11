@@ -24,7 +24,6 @@ export function Navbar() {
     setMobileOpen(false)
     setTimeout(() => {
       const el = document.getElementById(id)
-      console.log(document.getElementById(id))
       el?.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }, 200)
   }
@@ -39,15 +38,22 @@ export function Navbar() {
       }`}
     >
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-16 md:h-20 gap-4">
           <a
-            href="#hero"
-            className="flex items-center gap-2 text-text-primary hover:opacity-90 transition-opacity duration-200"
+            href="https://mietjmu.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center flex-shrink-0 text-text-primary hover:opacity-90 transition-opacity duration-200"
+            aria-label="MIET Jammu"
           >
-            <img src="/assets/LOGO.png" alt="Sarvajana AI" className="h-9 md:h-10 w-auto" />
+            <img
+              src="https://mietjmu.in/wp-content/uploads/2020/11/miet-logo-white.png"
+              alt="MIET Jammu Logo"
+              className="h-8 sm:h-9 md:h-11 lg:h-12 w-auto object-contain"
+            />
           </a>
 
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden md:flex flex-1 items-center justify-center gap-1">
             {navLinks.map((link) => (
               <a
                 key={link.id}
@@ -59,15 +65,17 @@ export function Navbar() {
             ))}
           </div>
 
-          <button
-            type="button"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden min-h-[44px] min-w-[44px] p-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-white/5 transition-colors flex items-center justify-center touch-manipulation"
-            aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
-            aria-expanded={mobileOpen}
-          >
-            {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <div className="flex items-center flex-shrink-0">
+            <button
+              type="button"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              className="md:hidden min-h-[44px] min-w-[44px] p-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-white/5 transition-colors flex items-center justify-center touch-manipulation"
+              aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={mobileOpen}
+            >
+              {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
       </nav>
 
