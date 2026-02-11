@@ -54,7 +54,7 @@ function SpeakerCard({ speaker, index }) {
             }}
           />
         </div>
-        <div className="p-6">
+        <div className="p-6 flex flex-col items-start text-left">
           <h3 className="text-lg font-bold text-text-primary">{speaker.name}</h3>
           <div className="mt-2 flex items-start gap-2">
             <Briefcase className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" aria-hidden />
@@ -85,7 +85,7 @@ export function Speakers() {
             <span className="text-sm font-semibold uppercase tracking-wider">Speakers</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text-primary font-display">
-            Speakers
+            Distinguished Speakers
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-text-secondary text-lg">
             Learn from industry leaders and experts in AI and Education

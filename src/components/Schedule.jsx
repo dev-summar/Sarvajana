@@ -14,7 +14,7 @@ const scheduleItems = [
   },
   {
     icon: Users,
-    title: "leaders Circle",
+    title: "Leaders Circle",
     description: 'A moderated panel discussion to enable a deeper exchange of perspectives among leaders, experts, and academicians.',
   },
   {
