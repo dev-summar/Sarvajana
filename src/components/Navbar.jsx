@@ -20,7 +20,16 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const handleNavClick = () => setMobileOpen(false)
+  const handleMobileNavClick = (e, href) => {
+    e.preventDefault()
+    setMobileOpen(false)
+    const id = href?.replace(/^#/, '')
+    if (id) {
+      const el = document.getElementById(id)
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      el?.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' })
+    }
+  }
 
   return (
     <motion.header
@@ -78,8 +87,8 @@ export function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={handleNavClick}
-                  className="block px-4 py-3 min-h-[44px] flex items-center rounded-lg text-text-secondary hover:text-text-primary hover:bg-white/5 transition-colors touch-manipulation"
+                  onClick={(e) => handleMobileNavClick(e, link.href)}
+                  className="block px-4 py-3 min-h-[44px] flex items-center rounded-lg text-text-secondary hover:text-text-primary hover:bg-white/5 transition-colors touch-manipulation text-base"
                 >
                   {link.label}
                 </a>
