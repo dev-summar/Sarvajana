@@ -18,8 +18,8 @@ const speakers = [
   },
   {
     name: 'Prof. Adit Gupta',
-    role: 'Director',
-    organization: 'MIER College of Education',
+    role: 'Director, MIER Group',
+    organization: null,
     image: '/assets/ProfAdit.png',
     fallbackImage: 'https://ui-avatars.com/api/?name=Adit+Gupta&size=400&background=1e293b&color=6366f1',
   },
@@ -54,14 +54,14 @@ function SpeakerCard({ speaker, index }) {
             }}
           />
         </div>
-        <div className="p-6 flex flex-col items-start text-left">
-          <h3 className="text-lg font-bold text-text-primary">{speaker.name}</h3>
-          <div className="mt-2 flex items-start gap-2">
-            <Briefcase className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" aria-hidden />
-            <p className="text-sm text-accent font-medium">{speaker.role}</p>
+        <div className="p-6 flex flex-col items-start text-left w-full">
+          <h3 className="text-lg font-bold text-text-primary w-full">{speaker.name}</h3>
+          <div className="mt-2 flex items-center gap-2 w-full">
+            <Briefcase className="w-4 h-4 text-accent flex-shrink-0" aria-hidden />
+            <span className="text-sm text-accent font-medium">{speaker.role}</span>
           </div>
           {speaker.organization && (
-            <p className="mt-1.5 text-sm text-text-secondary">{speaker.organization}</p>
+            <p className="mt-1 text-sm text-text-secondary block w-full">{speaker.organization}</p>
           )}
         </div>
       </div>
