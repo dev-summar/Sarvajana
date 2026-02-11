@@ -1,6 +1,13 @@
 import { motion } from 'framer-motion'
 import { MapPin, Calendar, Clock } from 'lucide-react'
 
+const sessionItems = [
+  'Speaker Talks (4 × 15 minutes)',
+  'Poster Presentation',
+  "Leaders' Circle Panel Discussion",
+  'Lunch & Meet and Greet',
+]
+
 const details = [
   {
     icon: MapPin,
@@ -15,7 +22,7 @@ const details = [
   {
     icon: Clock,
     label: 'Session',
-    value: "15-minute keynote followed by Leaders' Circle panel discussion",
+    items: sessionItems,
   },
 ]
 
@@ -49,13 +56,22 @@ export function Venue() {
                 <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-accent/20 flex items-center justify-center text-accent">
                   <item.icon className="w-5 h-5" />
                 </div>
-                <div>
+                <div className="min-w-0 flex-1">
                   <span className="text-xs font-semibold uppercase tracking-wider text-accent">
                     {item.label}
                   </span>
-                  <p className="mt-1 text-text-primary">
-                    {item.value}
-                  </p>
+                  {item.items ? (
+                    <ul className="mt-2 space-y-2 text-text-primary">
+                      {item.items.map((sessionItem) => (
+                        <li key={sessionItem} className="flex gap-2 text-sm leading-relaxed">
+                          <span className="text-accent-glow flex-shrink-0" aria-hidden>•</span>
+                          <span className="break-words">{sessionItem}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="mt-1 text-text-primary break-words">{item.value}</p>
+                  )}
                 </div>
               </div>
             ))}

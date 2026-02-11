@@ -6,6 +6,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Offset for fixed navbar so sections are not hidden under it */
+section {
+  scroll-margin-top: 90px;
+}
+
 body {
   background-color: #020617;
   color: #E5E7EB;
