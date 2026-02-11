@@ -59,7 +59,7 @@ export function Hero() {
           className="relative z-10 flex justify-center"
         >
           <img
-            src={`${import.meta.env.BASE_URL}assets/LOGO.png`}
+            src="/assets/LOGO.png"
             alt="Sarvajana AI"
             className="w-full max-w-[240px] sm:max-w-[320px] md:max-w-[400px] lg:max-w-[480px] h-auto object-contain"
           />

@@ -1,35 +1,33 @@
 import { motion } from 'framer-motion'
 import { Mic, Briefcase } from 'lucide-react'
 
-const base = import.meta.env.BASE_URL
-
 const speakers = [
   {
     name: 'Sidharth Mahotra',
     role: 'Principal AI Strategist & Machine Learning Leader',
     organization: null,
-    image: `${base}assets/Sidharth.png`,
+    image: '/assets/Sidharth.png',
     fallbackImage: 'https://ui-avatars.com/api/?name=Sidharth+Mahotra&size=400&background=1e293b&color=6366f1',
   },
   {
     name: 'Deepak Gupta',
     role: 'Director, Professional Services',
     organization: 'Coursera',
-    image: `${base}assets/Deepak.png`,
+    image: '/assets/Deepak.png',
     fallbackImage: 'https://ui-avatars.com/api/?name=Deepak+Gupta&size=400&background=1e293b&color=6366f1',
   },
   {
     name: 'Prof. Adit Gupta',
     role: 'Director, MIER Group',
     organization: null,
-    image: `${base}assets/ProfAdit.png`,
+    image: '/assets/ProfAdit.png',
     fallbackImage: 'https://ui-avatars.com/api/?name=Adit+Gupta&size=400&background=1e293b&color=6366f1',
   },
   {
     name: 'Rahul Hakeem',
     role: 'Partner (Advisory)',
     organization: 'KPMG',
-    image: `${base}assets/rahul.png`,
+    image: '/assets/rahul.png',
     fallbackImage: 'https://ui-avatars.com/api/?name=Rahul+Hakeem&size=400&background=1e293b&color=6366f1',
   },
 ]
