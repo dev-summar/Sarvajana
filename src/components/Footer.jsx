@@ -5,6 +5,14 @@ export function Footer() {
   return (
     <footer className="py-12 md:py-16 border-t border-white/10 bg-primary">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="flex justify-center mb-4"
+        >
+          <img src="/assets/LOGO.png" alt="Sarvajana AI" className="h-12 md:h-14 w-auto" />
+        </motion.div>
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

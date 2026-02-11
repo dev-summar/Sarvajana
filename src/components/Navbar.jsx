@@ -42,9 +42,9 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           <a
             href="#hero"
-            className="text-xl font-bold text-text-primary tracking-tight hover:text-accent transition-colors duration-200"
+            className="flex items-center gap-2 text-text-primary hover:opacity-90 transition-opacity duration-200"
           >
-            Sarvajana AI
+            <img src="/assets/LOGO.png" alt="Sarvajana AI" className="h-9 md:h-10 w-auto" />
           </a>
 
           <div className="hidden md:flex items-center gap-1">
